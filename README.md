@@ -1,1 +1,1 @@
-# buying gf
+# Discord: qJunx#6969
