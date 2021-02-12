@@ -1,1 +1,1 @@
-# Discord: osnapitzjamie#6969
+go away
