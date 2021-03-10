@@ -25,3 +25,11 @@ jobs:
           url: '${{ secrets.WEBHOOK_SECRET_1 }}'
           # The data sent to the webhook
           body: '{ "content": null,"embeds": [{"title": "[repo:branch] 1 new commit","description": "[`e619427`](https://github.com/link) commit","url": "https://github.com/link","color": 3187703,"author": {"name": "user","url": "https://github.com/user","icon_url": "https://avatars.githubusercontent.com/u/63141077"}}]}'
+
+
+
+
+
+
+
+
