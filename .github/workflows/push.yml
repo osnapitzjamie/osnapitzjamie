@@ -1,0 +1,23 @@
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      
+      - uses: actions/checkout@v2
+
+      - name: Webhook Action
+        # You may pin to the exact commit or the version.
+        # uses: joelwmale/webhook-action@6f6298309b7aa21dc601d8c6271e0be055ce6f0e
+        uses: joelwmale/webhook-action@2.1.0
+        with:
+          # The url to send the webhook event to
+          url: '${{ secrets.WEBHOOK_SECRET_1 }}'
+          # The data sent to the webhook
+          body: '{ "content": null,"embeds": [{"title": "[repo:branch] 1 new commit","description": "[`e619427`](https://github.com/link) commit","url": "https://github.com/link","color": 3187703,"author": {"name": "user","url": "https://github.com/user","icon_url": "https://avatars.githubusercontent.com/u/63141077"}}]}'
